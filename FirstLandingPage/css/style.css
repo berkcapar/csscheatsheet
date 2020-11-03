@@ -1,0 +1,88 @@
+body{
+    font-size: 1.125rem;
+    color: #707070;
+    margin: 0;
+    background: blue;
+}
+
+/* from a minimum width of 600px and bigger DESCENT ORDERING IS IMPORTANT!*/
+@media (min-width: 600px) {
+  body{
+    background: purple;
+}
+}
+
+/* from a minimum width of 750px and bigger*/
+
+@media (min-width: 750px){
+    body{
+      background: orange;
+  }
+  }
+  
+/* Typography */
+
+h1 {
+    font-size: 3rem;
+    color:#212614;
+    text-align: center;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+p {
+    margin-top: 0;
+}
+
+/* Layout */
+
+.container{
+    max-width: 980px;
+    margin: 0 auto;
+    width: 95%;
+}
+
+.columns{
+    display: flex;
+    justify-content: space-between;
+    margin: 1em 0;
+}
+
+@media (max-width:600px) {
+.columns{
+    flex-direction: column;
+    
+}
+}
+
+.col-1{
+width: 20%;
+}
+
+.col-2{
+    width: 45%;
+}
+
+.col-3{
+width: 70%;
+}
+
+@media (max-width:600px){
+    .col-1,
+    .col-2,
+    .col-3{
+        width: 100%;
+    }
+}
+
+.col-bg{
+    background:#212614;
+    padding: .5em;
+    color: white;
+}
+
+img{
+    max-width: 100%;
+}
